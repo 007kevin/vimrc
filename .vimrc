@@ -48,8 +48,6 @@ set t_Co=16
 
 " netrw
 let g:netrw_liststyle=3
-autocmd filetype netrw noremap <buffer> :netrw-cr o
-
 
 
 " Plugins:
