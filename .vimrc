@@ -21,12 +21,8 @@ set wrap
 set number
 set so=999
 
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
-
 nmap <F7> :tabp <CR>
 nmap <F8> :tabn <CR>
-
 
 execute pathogen#infect()
 " Easier split navigations
@@ -38,6 +34,7 @@ nnoremap <C-H> <C-W><C-H>
 " More natural split opening
 set splitbelow
 set splitright
+"set fillchars=vert:│  
 
 set wildignore+=.*
 set wildignore+=*~
@@ -49,20 +46,15 @@ set background=dark
 colorscheme solarized
 set t_Co=16
 
-" For Nerdtree
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" netrw
+let g:netrw_liststyle=3
+autocmd filetype netrw noremap <buffer> :netrw-cr o
 
-" Nerdtree toggle Ctrl+n
-"map <C-n> :NERDTreeToggle<CR>
 
-" Nerdtree open in buffer/tab
-" autocmd BufWinEnter * NERDTreeMirror
 
-Plugins:
+" Plugins:
 " pathogen 
 " MatchTag
-" nerdtree
 " vim-colors-solarezed
 " vim-rails
 " vim-vinegar
