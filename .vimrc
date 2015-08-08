@@ -24,7 +24,6 @@ set so=999
 nmap <F7> :tabp <CR>
 nmap <F8> :tabn <CR>
 
-execute pathogen#infect()
 " Easier split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -34,26 +33,10 @@ nnoremap <C-H> <C-W><C-H>
 " More natural split opening
 set splitbelow
 set splitright
-"set fillchars=vert:│  
+
+execute pathogen#infect()
 
 set wildignore+=.*
 set wildignore+=*~
 set wildignore+=*.swp
 set wildignore+=*.swo
-
-" Vim Solarized
-set background=dark
-colorscheme solarized
-set t_Co=16
-
-" netrw
-let g:netrw_liststyle=3
-
-
-" Plugins:
-" pathogen 
-" MatchTag
-" vim-colors-solarezed
-" vim-rails
-" vim-vinegar
-
