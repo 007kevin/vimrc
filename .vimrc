@@ -41,5 +41,7 @@ set wildignore+=*~
 set wildignore+=*.swp
 set wildignore+=*.swo
 
+highlight LineNr ctermfg=darkgrey
+
 " remove status from split windows
 set laststatus=0
