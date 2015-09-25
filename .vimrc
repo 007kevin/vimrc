@@ -42,6 +42,13 @@ set wildignore+=*.swp
 set wildignore+=*.swo
 
 highlight LineNr ctermfg=darkgrey
+highlight VertSplit ctermbg=236color  ctermfg=236color
 
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+  endif
+let g:airline_symbols.space = "\ua0"
 " remove status from split windows
 set laststatus=2
