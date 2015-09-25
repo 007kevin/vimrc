@@ -25,10 +25,10 @@ nmap <F7> :tabp <CR>
 nmap <F8> :tabn <CR>
 
 " Easier split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+"nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-K> <C-W><C-K>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
 
 " More natural split opening
 set splitbelow
@@ -46,9 +46,5 @@ highlight VertSplit ctermbg=236color  ctermfg=236color
 
 let g:airline_powerline_fonts = 1
 
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-  endif
-let g:airline_symbols.space = "\ua0"
-" remove status from split windows
+" Always show powerline status bar
 set laststatus=2

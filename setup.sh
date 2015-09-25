@@ -9,4 +9,6 @@ git clone https://github.com/tpope/vim-vinegar
 git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
 git clone https://github.com/Valloric/MatchTagAlways
 git clone git://github.com/tpope/vim-fugitive.git
+git clone https://github.com/christoomey/vim-tmux-navigator
 vim -u NONE -c "helptags vim-fugitive/doc" -c q
+
