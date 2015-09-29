@@ -5,7 +5,8 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
 "" Whitespace
-set nowrap                      " don't wrap lines
+set breakindent showbreak=..
+set linebreak
 set tabstop=2                   " a tab is two spaces (or set this to 4)
 set shiftwidth=2
 set expandtab                   " use spaces, not tabs (optional)
@@ -17,7 +18,6 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-set wrap
 set number
 set so=999
 
