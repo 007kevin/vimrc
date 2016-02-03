@@ -5,7 +5,6 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
 "" Whitespace
-set breakindent showbreak=..
 set linebreak
 set tabstop=2                   " a tab is two spaces (or set this to 4)
 set shiftwidth=2
@@ -24,11 +23,7 @@ set so=999
 nmap <F7> :tabp <CR>
 nmap <F8> :tabn <CR>
 
-" Easier split navigations
-"nnoremap <C-J> <C-W><C-J>
-"nnoremap <C-K> <C-W><C-K>
-"nnoremap <C-L> <C-W><C-L>
-"nnoremap <C-H> <C-W><C-H>
+let g:netrw_liststyle= 4
 
 " More natural split opening
 set splitbelow
@@ -40,11 +35,3 @@ set wildignore+=.*
 set wildignore+=*~
 set wildignore+=*.swp
 set wildignore+=*.swo
-
-highlight LineNr ctermfg=darkgrey
-highlight VertSplit ctermbg=236color  ctermfg=236color
-
-let g:airline_powerline_fonts = 1
-
-" Always show powerline status bar
-set laststatus=2
