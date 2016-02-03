@@ -23,7 +23,7 @@ set so=999
 nmap <F7> :tabp <CR>
 nmap <F8> :tabn <CR>
 
-let g:netrw_liststyle= 4
+let g:netrw_liststyle=3
 
 " More natural split opening
 set splitbelow
